@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Dashboard</title>
+
+</head>
+
+<body>
+    <div class="menu-top">
+        <span class="fa fa-navicon" id="btnMenu"></span>
+        <a href="http://" class="nome-empresa">Dashboard</a>
+        <div class="log-out"><a href="">Sair<span class="fa fa-power-off"></span></a></div>
+    </div>
+    <nav id="menu">
+        <div class="user">
+            <figure>
+                <img src="img/ADMIN.jpg">
+            </figure>
+            <span class="nome-user">Juliana Alves Freitas Farias Fagundes</span>
+        </div>
+
+        <ul>
+            <li class="active"><a><span class="fa fa-home"></span>Home</a>
+            </li>
+            <li><a><span class="fa fa-edit"></span>Cadastros</a></li>
+            <li><a><span class="fa fa-dollar"></span>Financeiro</a></li>
+            <li><a><span class="fa fa-wrench"></span>Configurações</a></li>
+            <li class="sub-menu" id="openSubMenu">
+                <a><span class="fa fa-line-chart"></span>Dropdown<span class="fa fa-level-down"></span></span></a>
+                <ul class="children" id="subMenu">
+                    <li><a>SubElemento<span class="icon-dot"></span></a>
+                    </li>
+                    <li><a>SubElemento<span class="icon-dot"></span></a></li>
+                    <li><a>SubElemento<span class="icon-dot"></span></a></li>
+                </ul>
+            </li>
+            <li class="sub-menu">
+                <a><span class="fa fa-file-pdf-o"></span>Relatórios</span></a>
+            </li>
+
+
+
+        </ul>
+
+    </nav>
+
+    <main id="main">
+        <h1>Dashboard - Painel de Controle</h1>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

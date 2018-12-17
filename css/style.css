@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.menu-top {
+    position: fixed;
+    padding: 15px 20px;
+    background-color: #000;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: sans-serif;
+    border-bottom: 2px solid rgba(108, 11, 106, .8);
+    color: #eee;
+    text-align: center;
+}
+
+.menu-top .fa-navicon {
+    float: left;
+    cursor: pointer;
+}
+
+.menu-top a {
+    text-decoration: none;
+    color: #eee
+}
+
+.log-out {
+    float: right;
+    font-size: 16px;
+    margin: 5px 35px 0 0;
+    cursor: pointer;
+}
+
+.log-out span {
+    margin-left: 5px;
+}
+
+nav {
+    width: 0;
+    max-width: 275px;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    text-align: left;
+    color: #fff;
+    box-shadow: 2px 0px 10px #000;
+    margin-top: 57px;
+    overflow-x: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 8px auto 70px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+nav ul li {
+    margin: 10px 10px 0;
+    border-radius: 5px;
+}
+
+nav ul li:hover {
+    background-color: rgba(108, 11, 106, .4)
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+nav ul li a span {
+    width: 30px
+}
+
+nav ul li a .fa-level-down {
+    margin-top: 7px;
+    margin-left: 15px;
+    font-size: 12px
+}
+
+nav ul li .children {
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    display: none;
+    position: relative;
+    margin: 7px 0;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 5px
+}
+
+nav ul li .children li {
+    display: block;
+    margin: 5px 0 5px 5px
+}
+
+nav ul li .children li:hover {
+    background: rgba(0, 0, 0, 1)
+}
+
+nav .active,
+nav .active:hover {
+    background-color: rgba(108, 11, 106, .8)
+}
+
+main {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 100px 50px 20px;
+}
+
+.user {
+    padding: 10px;
+    border-bottom: 2px solid rgba(108, 11, 106, .8);
+    text-align: center;
+    background: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.user figure {
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, .2);
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto 10px;
+    box-shadow: 0 0 5px rgba(108, 11, 106, .8)
+}
+
+.user figure img {
+    width: 100%
+}
+
+.user .nome-user {
+    display: block;
+    margin: auto;
+    white-space: nowrap;
+    max-width: 165px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*Scroll*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(108, 11, 106, .8);
+    border: 17px none #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(108, 11, 106, .8);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgba(108, 11, 106, .8);
+}
+
+::-webkit-scrollbar-track {
+    background: #aaa;
+    border: 0px none #ffffff;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #999;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #555;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
